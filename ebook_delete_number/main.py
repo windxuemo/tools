@@ -7,6 +7,9 @@ import sys
 
 def delete_suf_number(string):
     dot_index = string.rfind('.')
+    if dot_index == -1:
+        return string
+
     start_num_index = dot_index
 
     for i in range(dot_index-1, 0, -1):
